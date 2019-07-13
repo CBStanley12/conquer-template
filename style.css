@@ -5,29 +5,18 @@
 
 body {
 	font-family: "Open Sans", sans-serif;
-	height: 100vh;
 	margin: 0;
 }
 
-header {
-	align-items: center;
-	background: var(--primary-color);
-	display: flex;
-	justify-content: center;
-	min-height: 75px;
-	position: fixed;
-	top: 0;
+.hero {
+	position: relative;
 	width: 100%;
-	z-index: 4;
 }
 
-#hero {
-	width: 100%;
-	height: 100vh;
-}
+.hero--lg { height: 100vh; }
 
-.hero-img {
-	background-attachment: scroll;
+.hero_img {
+	background-attachment: fixed;
 	background-image: url("./images/header.jpg");
 	background-position: center;
   background-repeat: no-repeat;
@@ -36,7 +25,7 @@ header {
 	width: 100%;
 }
 
-.hero-txt {
+.hero_txt {
 	color: white;
 	font-weight: bold;
 	left: 50%;
@@ -48,19 +37,31 @@ header {
 	z-index: 2;
 }
 
-.hero-txt h1 {
+.hero_txt-title {
 	font-size: 70px;
 	margin-bottom: 5px;
 	text-shadow: 2px 2px #000;
 }
 
-.hero-txt h4 {
+.hero_txt-copy {
 	font-size: 25px;
 	margin-top: 5px;
 	text-shadow: 1px 1px #000;
 }
 
-nav a {
+.navbar {
+	align-items: center;
+	background: var(--primary-color);
+	display: flex;
+	justify-content: center;
+	min-height: 75px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 4;
+}
+
+.navbar_nav-link {
 	background-color: var(--primary-color);
 	border: 1px solid var(--secondary-color);
 	color: white;
@@ -75,6 +76,6 @@ nav a {
 	width: 135px;
 }
 
-nav a:hover {
+.navbar_nav-link:hover {
 	background-color: rgba(100,109,124,0.3);
 }
